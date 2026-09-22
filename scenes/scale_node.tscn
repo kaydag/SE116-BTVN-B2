@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bkqfujofqa116"]
+
+[ext_resource type="PackedScene" uid="uid://bky11lmat824w" path="res://scenes/moving_node.tscn" id="1_i48di"]
+
+[node name="Foxy" unique_id=2141096023 instance=ExtResource("1_i48di")]

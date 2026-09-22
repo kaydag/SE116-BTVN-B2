@@ -1,0 +1,261 @@
+[gd_scene format=3 uid="uid://c3np3pse7wkmq"]
+
+[ext_resource type="Texture2D" uid="uid://bgmn2up6y3651" path="res://assets/meshes/textures/grass_block.png" id="1_2i8kc"]
+[ext_resource type="PackedScene" uid="uid://bky11lmat824w" path="res://scenes/moving_node.tscn" id="2_5yvk6"]
+[ext_resource type="PackedScene" uid="uid://bkqfujofqa116" path="res://scenes/scale_node.tscn" id="3_8i2m1"]
+[ext_resource type="Script" uid="uid://bsb1coplfp1cy" path="res://scripts/scale_node.gd" id="4_647yj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ra25d"]
+albedo_texture = ExtResource("1_2i8kc")
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ra25d"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ra25d"]
+ground_bottom_color = Color(0.35159922, 0.43804607, 0.9830274, 1)
+
+[sub_resource type="Sky" id="Sky_4dbi5"]
+sky_material = SubResource("ProceduralSkyMaterial_ra25d")
+
+[sub_resource type="Environment" id="Environment_1gu6w"]
+background_mode = 2
+sky = SubResource("Sky_4dbi5")
+
+[node name="Diorama" type="Node3D" unique_id=1705533369]
+
+[node name="Ground" type="Node3D" parent="." unique_id=1109168050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=699690304]
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Ground" unique_id=872941124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Ground" unique_id=322191264]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Ground" unique_id=855781016]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Ground" unique_id=799643963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Ground" unique_id=1635945046]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Ground" unique_id=1619816538]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Ground" unique_id=786810810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Ground" unique_id=1940484803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Ground" unique_id=1760649881]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Ground" unique_id=2008154947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Ground" unique_id=1497908094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Ground" unique_id=1029998501]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Ground" unique_id=1843168636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Ground" unique_id=122498082]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Ground" unique_id=1521350795]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Ground" unique_id=1259041880]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Ground" unique_id=1222923259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Ground" unique_id=1671419454]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1916506432]
+transform = Transform3D(1, 0, 0, 0, 0.7071068, 0.7071068, 0, -0.7071068, 0.7071068, -1, 19, 24)
+fov = 90.6
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=898921116]
+transform = Transform3D(0.8471551, 0.37275514, -0.37865794, 0.28422, 0.28422, 0.9156626, 0.4489401, -0.8833304, 0.13483398, 0, 15, 3)
+visible = false
+light_color = Color(0.851305, 0.5187, 0.91, 1)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1650468894]
+environment = SubResource("Environment_1gu6w")
+
+[node name="Foxy" parent="." unique_id=2141096023 instance=ExtResource("2_5yvk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 5)
+
+[node name="Foxy2" parent="." unique_id=126258784 instance=ExtResource("3_8i2m1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 7)
+script = ExtResource("4_647yj")
+scale_speed = 0.2
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=680377005]
+transform = Transform3D(-0.72967637, -0.17458364, 0.6611301, 0.03661911, 0.9554933, 0.2927315, -0.6828114, 0.23780926, -0.69080776, 5.0782967, 5.3332443, -2.2680626)
+light_energy = 3.056
+light_indirect_energy = 0.0
+shadow_enabled = true
+shadow_bias = 0.0
+spot_range = 20.588
+spot_attenuation = -1.22
+spot_angle = 36.26
+spot_angle_attenuation = 1.6245025
+
+[node name="Ground2" type="Node3D" parent="." unique_id=771653732]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, 15)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground2" unique_id=1184294421]
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Ground2" unique_id=78856623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Ground2" unique_id=959221341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Ground2" unique_id=308449447]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="Ground2" unique_id=32641097]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Ground2" unique_id=436193506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Ground2" unique_id=1722582896]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D17" type="MeshInstance3D" parent="Ground2" unique_id=288397453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 2, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D19" type="MeshInstance3D" parent="Ground2" unique_id=516547566]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D18" type="MeshInstance3D" parent="Ground2" unique_id=964178265]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Ground2" unique_id=1429934419]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Ground2" unique_id=416474167]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Ground2" unique_id=17230790]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Ground2" unique_id=1027707135]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Ground2" unique_id=116813131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D13" type="MeshInstance3D" parent="Ground2" unique_id=1616136076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D14" type="MeshInstance3D" parent="Ground2" unique_id=1186099010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D15" type="MeshInstance3D" parent="Ground2" unique_id=1003325416]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="MeshInstance3D16" type="MeshInstance3D" parent="Ground2" unique_id=1740542983]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+material_override = SubResource("StandardMaterial3D_ra25d")
+mesh = SubResource("BoxMesh_ra25d")
+
+[node name="Foxy3" parent="." unique_id=1252635829 instance=ExtResource("2_5yvk6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 22)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=908366498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, 17)
+light_energy = 2.389
+shadow_enabled = true
+omni_range = 8.17
+omni_attenuation = 0.236
